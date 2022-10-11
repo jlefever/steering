@@ -42,6 +42,14 @@ public class RotatedRectangle {
         ang = angle;
     }
 
+    public double getWidth() {
+        return this.S.x;
+    }
+
+    public double getHeight() {
+        return this.S.y;
+    }
+
     public static boolean RotRectsCollision(double x1, double y1, double width1, double height1, double angle1,
                                             double x2, double y2, double width2, double height2, double angle2) {
         return RotRectsCollision(new RotatedRectangle(x1,y1,width1,height1,angle1), 
